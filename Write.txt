@@ -1,0 +1,315 @@
+7.29
+
+오라클계정
+
+sp6912@naver.com
+
+Dnflrkwhr1!
+
+--------------
+7.30
+
+ctrl + alt + 아래화살표 //복사
+
+ctrl + (d) //삭제 
+
+--------------
+7.31
+
+지역변수는 인스턴스 변수로 접근 불가
+
+전역변수만 인스턴스 변수(객체변수)로 접근할 수 있음
+
+--------------
+8.03
+
+변수의 종류
+
+1) 전역변수 : member variable, global variable
+2) 지역변수 : local variable, autumatic variable
+3) 정적변수 : static variable
+
+
+오라클 파일
+실행 : rundll32 keymgr.dll KRShowKeyMgr
+경로 -> C:\user\kosmo05-teacher
+ip : 192.168.0.244
+name : kosmo05-teacher
+abcd1234
+
+파일경로 : 
+
+\\192.168.0.244
+
+
+
+//////////
+showMessageDialog
+public static void showMessageDialog(Component parentComponent,
+                                     Object message,
+                                     String title,
+                                     int messageType)
+                              throws HeadlessException
+
+Brings up a dialog that displays a message using a defaulticon determined by the messageType parameter.
+Parameters:parentComponent - determines the Framein which the dialog
+ is displayed; if null,or if the parentComponent has no Frame, a default Frame is 
+usedmessage - the Object to displaytitle - the title string for the dialogmessageType -
+ the type of message to be displayed: ERROR_MESSAGE, INFORMATION_MESSAGE,
+ WARNING_MESSAGE, QUESTION_MESSAGE,or PLAIN_MESSAGEThrows:HeadlessException - 
+if GraphicsEnvironment.isHeadless returns trueSee Also:GraphicsEnvironment.isHeadless()
+
+JOptionPane.showMessageDialog
+단순한 알림창을 띄울 수 있는 함수다.
+
+Component parentComponent : 메시지창이 어떤 Frame 에서 보이지게 될 것인지 지정해준다. 보통 null 을 사용한다.
+
+Object message : 출력할 문자열을 써준다.
+
+String title : 제목표시줄에 나타날 제목을 써준다.
+
+int messageType : 메시지 종류를 지정해준다. ERROR_MESSAGE, INFORMATION_MESSAGE, WARNING_MESSAGE, QUESTION_MESSAGE, or PLAIN_MESSAGE 가 있다.
+//////////////
+
+------------------
+8.04
+
+변수가 몇 개 필요한지 판단할수 있는가
+변수의 타입을 정할 수 있음
+전역변수 지역변수 선언 선택가능
+메소드 파라미터 자리에 왜 변수를 선언해야하는가
+
+String score = JOptionPane.showInputDialog("");
+입력창
+
+
+alter user scott identified by tiger;
+
+
+* N-S chart
+
+------------
+8.05
+
+도현 오라클 이름 : orc11
+
+------------
+8.06
+
+학습목표
+API 활용해서 내가 구현하는 프로그램에 적용할 수 있다.
+API 활용능력
+ex) 배우지 않았어도 Random함수 구글링하여 활용할 수 있음
+API를 보고 코드에 적용할 수 있는 능력 기르기
+메소드 호출 시에는 소유주(주소)가 와야한다 (객체변수)
+
+setsize(int, int) void(리턴타입) - window(소요주)
+
+System.exit(0);
+
+/*
+	jbtn_exit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                System.exit(0);
+            }
+        });
+		
+	edit_exit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                System.exit(0);
+            }
+        });
+*/
+
+--------------------------------
+8.07
+
+if문에 안에 리턴이 오면
+메소드를 탈출한다.
+
+getImage(String filename) : 이미지파일 불러옴
+
+
+--------------------------------
+8.10
+
+관계있는 것들 연결해보기
+
+1. boolean과 관계있는 것
+if, for, while, do~while
+
+JFrame jf = new JFrame();
+Boolean isView = false;
+jf.setVisible(isView);
+
+
+int x = 0;
+if(x>1) { 실행문; }
+
+for(;x<3;) { 실행문; }
+
+while(isView) { 실행문; }
+
+2. int[] 배열과 관련있는 낱말카드
+인덱스, 주소 
+
+int com[] = new int[3];
+com[0] = 5;
+
+for(초기화; 조건식; 증감연산자) { 실행문 ; }
+
+3. 클래스와 관련있는 용어들 정리
+변수, 메소드, 생성자, 상속, 인터페이스
+
+emp테이블을 클래스로 만든다면 어떻게 해야할까??
+
+------------------------
+8.11
+
+객체배열
+
+서버(오라클)
+스레드
+
+
+pl/sql 문(표준)
+select deptno, dname, loc 
+from dept
+
+좀비컴퓨터
+
+----------------
+8.12
+
+클래스는 메소드가 없어도 된다.
+메인 메소드가 없어도 됨.
+다른 클래스에서 호출하거나 인스턴스화를 이용
+
+오라클에서 CURSOR란 시스템 글로벌 영역의 공유 풀 내에 저장공간을 사용하여 
+사용자가 SQL 문을 실행시키면 결과값을 저장공간에 가지고 있다가 원하는 시기에 
+순차적으로 fetch해 처리하여 해당 결과 셋을 프로그래밍적으로 접근할수 있게 
+도와주는 기능이다
+
+Cursor가 있는 위치에 데이터가 있으면 True반환
+없으면 False 반환
+
+PM
+
+하드웨어가 결정되고 소프트웨어 개발시작
+
+솔라리스 회사
+
+Vector<>
+타입
+
+inteli J
+
+
+---------------------
+8.13
+
+자바 소켓통신
+
+GitHub 활용
+
+D:\git2020_java69 
+로컬 git저장소
+
+https://github.com/slalom0914/java69.git
+
+작업지시서
+1) 로컬 PC에 공유할 폴더 이름을 하나 생성함.
+2) 이 공간을 초기화 함.
+
+dir
+dir/w
+
+//로컬 저장소를 만든후에 그 폴더에 숨김파일을 저장할 수 있도록 초기화 함
+git init
+
+
+형상관리(소수인력) - git에대한 유지보수(버전관리)
+공통팀
+ex) 삼성sdi(고급정보)
+
+서버에 자료 올릴때는 commit해야함(공유를 위함)
+1. 서버에 add
+2. commit
+3. push
+
+FORK권한 상관없이 사용자가 이용할 수있는 개념..?
+
+내려받을 때는  
+1. pull
+
+위 과정을 통해 공유가 이루어짐
+----------------
+원격저장소 생성하기
+-----------
+github desktop
+--------------
+git-scm.com/download/win
+-----
+깃허브 버전확인
+git --version
+
+깃허브 올릴때
+cmd
+경로로 들어가서
+git init
+git clone https://github.com/Gemina92/Java69_Programming(주소, 뒤에 git는 제외)
+dir 확인
+
+git add 파일
+git commit -m "메모 내용"
+git push origin master
+ID, PW 입력
+===> 서버 업로드 완료
+
+--------------
+
+CallBack Method
+- 다른 함수의 인자로서 이용됨
+- 어떤 이벤트에 의해 호출됨
+- 개발자가 직접 인스턴스화 하지 않음
+- 시스템(=pc)에 의해 실행됨
+- 호출시기는 이벤트가 감지되었을 때 이고, 그 때 JVM에 의해 주입이 일어남
+
+Cf. ) 사용자[호출자](Caller)가 //시스템[피호출자](Callee)에게// 처리요청을 하면 call 
+<-> 시스템이 //사용자에게// 처리요청을 하면 callback
+
+
+
+JMenuItem jmi_sel = new JMenuItem("조회"); // 조회버튼
+jmi_sel.addActionListener(this); // actionPerformed 를 실행시킴
+//void java.awt.Component.addMouseListener(MouseListener l) // this -> mouseListener I
+
+void java.awt.event.ActionListener.actionPerformed(ActionEvent e)
+@Override
+void oracle.db.DeptApp.actionPerformed(ActionEvent e)
+
+actionPerformed(ActionEvent e) : 버튼 클릭시 발동되는 메소드
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
